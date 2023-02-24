@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer">
+
+        <link rel="stylesheet" href="https://zola-sam.janbaudisch.dev/fonts.css">
+        <link rel="stylesheet" href="https://zola-sam.janbaudisch.dev/style.css">
+
+        <title>
+    About Zola
+</title>
+
+        
+    </head>
+    <body>
+        
+    <div class="wrap">
+        <div class="section" id="title">
+            
+    About Zola
+
+        </div>
+        <div class="section" id="sections">
+            
+        </div>
+        <div class="section" id="content">
+            
+    
+        
+            
+    
+    Mon Apr  5, 2021
+
+        
+        
+            
+                &#183; 530 words
+            
+        
+        
+            
+            
+                &#183; 3 min
+            
+        
+        
+            <div class="tag-container">
+                Tags :&nbsp;
+                
+                    <span class="tag">
+                        <a href="https://zola-sam.janbaudisch.dev/tags/zola/">
+                            zola
+                        </a>
+                    </span>
+                
+                    <span class="tag">
+                        <a href="https://zola-sam.janbaudisch.dev/tags/tutorial/">
+                            tutorial
+                        </a>
+                    </span>
+                
+            </div>
+        
+        
+            <div class="tag-container">
+                Authors :&nbsp;
+                
+                    <span class="tag">
+                        <a href="https://zola-sam.janbaudisch.dev/authors/subash/">
+                            Subash
+                        </a>
+                    </span>
+                
+            </div>
+        
+        <hr/>
+    
+    <h2 id="zola">ZOLA</h2>
+<p>Zola is a fast and easy-to-use static site generator written in Rust. It comes with many features such as templates, custom shortcodes, and a built-in web server that make it a popular choice for developers who want to create static websites quickly and efficiently. However, to make your Zola site stand out, you need to choose and configure a theme that fits your needs. In this article, we will guide you on how to set up a Zola theme.</p>
+<h4 id="step-1-choose-a-zola-theme">Step 1: Choose a Zola Theme</h4>
+<p>Before setting up a Zola theme, you need to choose one. There are several Zola themes available that you can use to customize your site's look and feel. You can find them on the official Zola website or on GitHub. Choose a theme that fits your website's purpose and design aesthetic.</p>
+<p>Once you have found a theme that you like, download the theme's ZIP file or clone its Git repository. For this article, we will use the After Dark theme as an example.</p>
+<h4 id="step-2-unpack-the-zola-theme">Step 2: Unpack the Zola Theme</h4>
+<p>After downloading the theme, unpack it into your Zola site's themes directory. If the directory does not exist, create it in your site's root directory.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">$ unzip after-dark.zip -d themes&#x2F;
+</code></pre>
+<h4 id="step-3-configure-the-zola-theme">Step 3: Configure the Zola Theme</h4>
+<p>To configure the Zola theme, create a config.toml file in your site's root directory and add the following lines:</p>
+<pre data-lang="makefile" class="language-makefile "><code class="language-makefile" data-lang="makefile">theme = &quot;after-dark&quot;
+</code></pre>
+<p>This tells Zola to use the &quot;after-dark&quot; theme for your site. You can also add other configuration options such as the site's title, description, and base URL. For example:</p>
+<pre data-lang="makefile" class="language-makefile "><code class="language-makefile" data-lang="makefile">title = &quot;My Awesome Site&quot;
+description = &quot;This is my awesome Zola site.&quot;
+base_url = &quot;https:&#x2F;&#x2F;example.com&quot;
+theme = &quot;after-dark&quot;
+</code></pre>
+<h4 id="step-4-customize-the-zola-theme">Step 4: Customize the Zola Theme</h4>
+<p>Now that you have set up the Zola theme, you can customize it to fit your needs. Themes usually come with pre-defined layouts, styles, and assets that you can modify to personalize your site's look and feel. For example, you can edit the theme's CSS file to change the site's colors and typography.</p>
+<p>The After Dark theme has a config.toml file that you can use to customize the theme's options. For example, you can change the site's background color by adding the following lines to your config.toml file:</p>
+<pre data-lang="csharp" class="language-csharp "><code class="language-csharp" data-lang="csharp">[extra]
+bg_color = &quot;#F2F2F2&quot;
+</code></pre>
+<h4 id="step-5-preview-the-zola-theme">Step 5: Preview the Zola Theme</h4>
+<p>To preview your Zola site with the new theme, run the following command in your site's root directory:</p>
+<pre data-lang="ruby" class="language-ruby "><code class="language-ruby" data-lang="ruby">$ zola serve
+</code></pre>
+<p>This will start a local web server and open your site in your default web browser. You can now view your site with the new theme.</p>
+<h4 id="step-6-deploy-the-zola-site">Step 6: Deploy the Zola Site</h4>
+<p>Once you are satisfied with the Zola theme's configuration and customization, you can deploy your site to a web server. Zola generates static HTML files that you can upload to any web server that supports serving static files. You can also use a hosting service such as Netlify or GitHub Pages to deploy your site.</p>
+<p>To generate the static files, run the following command in your site's root directory:</p>
+<pre data-lang="ruby" class="language-ruby "><code class="language-ruby" data-lang="ruby">$ zola build
+</code></pre>
+<p>This will generate the static HTML files in the public directory. You can now</p>
+
+
+        </div>
+        
+    <div class="section bottom-menu">
+        <hr/>
+        <p>
+            
+                
+                    <a href="&#x2F;posts">posts</a>
+                    &#183;
+                
+                    <a href="&#x2F;about">about</a>
+                    &#183;
+                
+                    <a href="https:&#x2F;&#x2F;github.com">github</a>
+                    &#183;
+                
+            
+            <a href="https:&#x2F;&#x2F;zola-sam.janbaudisch.dev">
+                home
+            </a>
+        </p>
+    </div>
+
+        
+    
+        <div class="section footer">
+            Some footer text.
+        </div>
+    
+
+    </div>
+
+    </body>
+</html>
