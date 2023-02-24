@@ -1,6 +1,6 @@
 +++
 title = "Customize Settings app with overlay"
-date = 2020-03-02
+date = 2021-03-02
 [taxonomies]
 tags = ["aosp", "settings"]
 authors = ["Subash"]
@@ -20,51 +20,52 @@ Modifying the AOSP Settings app using an overlay
 
 Let’s start by modifying the color of the Settings app’s header. To do this, we will create an overlay that changes the color of the header. Here are the steps to follow:
 
-    Create a new directory in your AOSP project’s overlay directory. For example, you can create a directory called “my_settings_overlay”.
+Create a new directory in your AOSP project’s overlay directory. For example, you can create a directory called “my_settings_overlay”.
 
-    Inside the “my_settings_overlay” directory, create a new directory called “res”.
+Inside the “my_settings_overlay” directory, create a new directory called “res”.
 
-    Inside the “res” directory, create a new directory called “values”.
+Inside the “res” directory, create a new directory called “values”.
 
-    Inside the “values” directory, create a new file called “styles.xml”.
+Inside the “values” directory, create a new file called “styles.xml”.
 
-    Open the “styles.xml” file in a text editor and add the following code:
+Open the “styles.xml” file in a text editor and add the following code:
 
-xml
-
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="SettingsTheme" parent="@android:style/Theme.Material.Light">
         <item name="android:colorPrimary">#FF4081</item>
     </style>
 </resources>
+```
 
 In this code, we are defining a new style called “SettingsTheme” that inherits from the Material Light theme. We are also setting the value of the “android:colorPrimary” attribute to “#FF4081”, which is a shade of pink.
 
-    Build your AOSP project by running the “make” command.
+Build your AOSP project by running the “make” command.
 
-    Flash your modified AOSP build onto your device.
+Flash your modified AOSP build onto your device.
 
-    Open the Settings app and verify that the color of the header has changed.
+Open the Settings app and verify that the color of the header has changed.
 
 Next, let’s modify the behavior of the Wi-Fi and Bluetooth toggles in the Settings app. By default, tapping on a toggle will toggle its state. We want to modify this behavior so that tapping on a toggle will open the corresponding Wi-Fi or Bluetooth settings screen.
 
 To do this, we will create an overlay that intercepts the tap events of the toggles and opens the appropriate settings screen. Here are the steps to follow:
 
-    Create a new directory in your AOSP project’s overlay directory. For example, you can create a directory called “my_settings_overlay”.
+Create a new directory in your AOSP project’s overlay directory. For example, you can create a directory called “my_settings_overlay”.
 
-    Inside the “my_settings_overlay” directory, create a new directory called “smali”.
+Inside the “my_settings_overlay” directory, create a new directory called “smali”.
 
-    Inside the “smali” directory, create a new directory structure that matches the package name of the Settings app. For example, if the package name of the Settings app is “com.android.settings”, create a directory structure like this: “com/android/settings/”.
+Inside the “smali” directory, create a new directory structure that matches the package name of the Settings app. For example, if the package name of the Settings app is “com.android.settings”, create a directory structure like this: “com/android/settings/”.
 
-    Inside the final “settings” directory, create a new file called “Settings$1.smali”.
+Inside the final “settings” directory, create a new file called “Settings$1.smali”.
 
-    Open the “Settings$1.smali” file in a text editor and add the following code:
+Open the “Settings$1.smali” file in a text editor and add the following code:
 
-csharp
+```smali
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    const-string v0,
+const-string v0,
 
+```
