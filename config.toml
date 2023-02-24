@@ -25,6 +25,7 @@ home = "home"
 sam_menu = [
     { text = "posts", link = "/posts" },
     { text = "about", link = "/about" },
+    { text = "projects", link = "/projects" },
     { text = "github", link = "https://github.com/subashz" }
 ]
 
